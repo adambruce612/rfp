@@ -1,0 +1,55 @@
+/* https://coolors.co/000814-001d3d-003566-ffc300-ffd60a */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+.main-nav-items {
+    display: none;
+}
+
+.mobile-nav-items {
+    background: #FFD60A;
+    width: 50%;
+    margin-left: 0;
+    text-align: end;
+}
+
+.mobile-nav-item {
+    list-style-type: none;
+}
+
+.mobile-nav-item a {
+    color: #003566;
+}
+
+#hamburgerIcon {
+    fill: #fff;
+}
+
+@media (min-width: 720px) {
+    .mobile-nav-items {
+        display: none;
+    }
+
+    .main-nav-items {
+        display: block;
+        text-align: end;
+    }
+
+    .main-nav-item {
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .main-nav-item a {
+        color: #fff;
+        padding-right: 20px;
+    }
+    
+}
