@@ -9,8 +9,13 @@ body {
     background-color: #000;
 }
 
-.main-nav-item {
-    display: none;
+.main-nav {
+    display: none; 
+}
+.mobile-nav {
+overflow: hidden;
+  background-color: #FFD60A;
+  position: relative;
 }
 
 .mobile-nav-items {
@@ -26,6 +31,11 @@ body {
     color: #003566;
 }
 
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
 #hamburgerIcon {
     fill: #fff;
     position: absolute;
@@ -34,7 +44,7 @@ body {
 }
 
 @media (min-width: 720px) {
-    .mobile-nav-item {
+    .mobile-nav-items  {
         display: none;
     }
 
