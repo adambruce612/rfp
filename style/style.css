@@ -18,15 +18,9 @@ body {
     width: 100%;
     margin-left: 0;
     display: none;
+    list-style-type: none;
+    text-align: center;
 }
-
-.mobile-nav-items .active {
-    display: block;
-}
-
-
-
-
 
 .mobile-nav-item a {
     color: #003566;
@@ -40,7 +34,7 @@ body {
 }
 
 @media (min-width: 720px) {
-    .mobile-nav-items {
+    .mobile-nav-item {
         display: none;
     }
 
@@ -59,4 +53,7 @@ body {
         padding-right: 20px;
     }
     
+    #hamburgerIcon {
+        display: none;
+    }
 }

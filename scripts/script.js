@@ -1,9 +1,6 @@
 const menuToggle = document.getElementById("hamburgerIcon");
-let mobileLinks = document.querySelectorAll(".mobile-nav-item");
+let mobileLinks = document.querySelector(".mobile-nav-items");
 
-console.log(mobileLinks);
 menuToggle.addEventListener('click', () => {
-   mobileLinks.forEach(element => {
-    mobileLinks[element].classList.add("active"); 
-   });
+   mobileLinks.style.display = "block";
 });
