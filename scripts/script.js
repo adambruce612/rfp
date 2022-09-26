@@ -1,10 +1,17 @@
 const menuToggle = document.getElementById("hamburgerIcon");
-let mobileLinks = document.querySelector(".mobile-nav-item");
+let mobileLinks = document.getElementById("mobile-nav-items");
+
+console.log(mobileLinks.classList);
+
+// menuToggle.addEventListener('click', () => {
+//    if (mobileLinks.classList = "active") {
+//    mobileLinks.classList.remove("active")
+//    } else {
+//       mobileLinks.classList.remove("active");
+//    }
+// });
 
 menuToggle.addEventListener('click', () => {
-   if (mobileLinks.style.display === "none") {
-   mobileLinks.style.display = "block";
-   } else {
-      mobileLinks.style.display = "none";
-   }
-});
+   mobileLinks.classList.toggle('active');
+   console.log(mobileLinks.classList);
+})

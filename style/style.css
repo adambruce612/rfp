@@ -9,17 +9,20 @@ body {
     background-color: #000;
 }
 
+/* Main Nav set to display none for mobile layout */
 .main-nav {
     display: none; 
 }
+
+/* Mobile navigation styling */
 .mobile-nav {
-overflow: hidden;
-  background-color: #FFD60A;
+  overflow: hidden;
+  background-color: grey;
   position: relative;
 }
 
-.mobile-nav-items {
-    background: #FFD60A;
+#mobile-nav-items {
+    background-color: grey;
     width: 100%;
     margin-left: 0;
     display: none;
@@ -27,13 +30,23 @@ overflow: hidden;
     text-align: center;
 }
 
-.mobile-nav-item a {
-    color: #003566;
+#mobile-nav-items.active {
+    display: block;
+    background-color: grey;
 }
 
-#logo {
-    width: 60px;
-    height: 60px;
+#mobile-nav-items.active a {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#mobile-logo {
+    width: 75px;
+    height: 75px;
+    margin: auto;
 }
 
 #hamburgerIcon {
@@ -43,27 +56,52 @@ overflow: hidden;
     right: 10px;    
 }
 
+/* Section titles styling */
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+/* Music section styling */
+#bad-year {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
 @media (min-width: 720px) {
-    .mobile-nav-items  {
+    .mobile-nav {
         display: none;
     }
 
-    .main-nav-items {
-        display: block;
-        text-align: end;
-    }
-
-    .main-nav-item {
+    .main-nav {
         display: inline-block;
-        padding-top: 10px;
+        width: 100%;
+        background-color: grey;
     }
 
-    .main-nav-item a {
+    #desktop-logo {
+        width: 100px;
+        height: 100px;
+        display: inline;
+    }
+
+    #main-nav-items {
+        display: inline;
+        text-align: center;
+    }
+
+    #main-nav-items a {
+        display: inline-block;
         color: #fff;
         padding-right: 20px;
     }
-    
-    #hamburgerIcon {
-        display: none;
-    }
+
 }

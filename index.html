@@ -11,19 +11,11 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <ul class="main-nav-items">
-            <li id="brand" class="main-nav-item"></li>
-            <li class="main-nav-item"><a href="#">Section</a></li>
-            <li class="main-nav-item"><a href="#">About</a></li>
-            <li class="main-nav-item"><a href="#">Contact </a></li>
-        </ul>
-    </nav> 
     <nav class="mobile-nav">
-        <a href="#"><img src="images/logo.png" id="logo" alt="Radio For Pets Logo"></a>
+        <a href="#"><img src="images/logo.png" id="mobile-logo" alt="Radio For Pets Logo"></a>
         <div id="mobile-nav-items">
-            <a href="#">Section</a>
-            <a href="#">About</a>
+            <a href="#music">Music</a>
+            <a href="tour">Tour</a>
             <a href="#">Contact</a>
         </div>
         <svg id="hamburgerIcon" viewBox="0 0 100 80" width="40" height="40">
@@ -32,6 +24,25 @@
             <rect y="60" width="100" height="20"></rect>
         </svg>
     </nav> 
+    <nav class="main-nav">
+        <a href="#"><img src="images/logo.png" id="desktop-logo" alt="Radio For Pets Logo"></a>
+        <div id="main-nav-items">
+            <a href="#">Section</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav> 
+
+    <main>
+        <section id="music">
+            <h2>MUSIC</h2>
+            <div id="release">
+                <img src="images/badyear.png" id="bad-year" alt="Bad Year Single Artwork">
+                <h3>Billy Block and the Terrible, Horrible, No Good, Very Bad Year Single</h3>
+            </div>
+        </section>
+    </main>
+    
     <script src="scripts/script.js"></script>
 </body>
 </html>
