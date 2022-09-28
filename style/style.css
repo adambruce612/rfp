@@ -7,6 +7,12 @@
 
 body {
     background-color: #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
 }
 
 /* Main Nav set to display none for mobile layout */
@@ -19,6 +25,7 @@ body {
   overflow: hidden;
   background-color: grey;
   position: relative;
+  grid-column: span 2;
 }
 
 #mobile-nav-items {
@@ -56,25 +63,33 @@ body {
     right: 10px;    
 }
 
+main {
+    grid-column: span 2;
+}
+
 /* Section titles styling */
 h2 {
     color: white;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
-    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 /* Music section styling */
 #bad-year {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    display: block;
+    height: 150px;
+    width: auto;
+    margin: auto
 }
 
 h3 {
     text-align: center;
     color: white;
+    margin-top: 10px;
 }
+
+
 
 @media (min-width: 720px) {
     .mobile-nav {
