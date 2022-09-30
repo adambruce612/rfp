@@ -76,28 +76,83 @@ h2 {
 }
 
 /* Music section styling */
+
+#music img {
+    border: 2px solid white;
+}
+
 #bad-year {
     display: block;
     height: 150px;
     width: auto;
-    margin: auto
+    margin: auto;
 }
 
 h3 {
     text-align: center;
     color: white;
     margin-top: 10px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+aside {
+    grid-column: span 2;
+}
+
+.social-media {
+    text-align: center;
+    overflow: hidden;
 }
 
 
+.icon {
+    color: black;
+    fill: white;
+    width: 2em;
+    height: 2em;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.social-media a {
+    color: black;
+}
+
+.icon:hover {
+    fill: yellow;
+}
 
 @media (min-width: 720px) {
+    .wrapper {
+        grid-template-columns: repeat(12 1fr);
+    }
+
     .mobile-nav {
         display: none;
     }
 
     .main-nav {
-        display: inline-block;
+        display: block;
+        grid-column: span 12;
         width: 100%;
         background-color: grey;
     }
@@ -106,6 +161,7 @@ h3 {
         width: 100px;
         height: 100px;
         display: inline;
+        
     }
 
     #main-nav-items {
