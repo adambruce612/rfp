@@ -12,7 +12,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Main Nav set to display none for mobile layout */
@@ -143,7 +143,7 @@ aside {
 
 @media (min-width: 720px) {
     .wrapper {
-        grid-template-columns: repeat(12 1fr);
+        grid-template-columns: repeat(12, 1fr);
     }
 
     .mobile-nav {
