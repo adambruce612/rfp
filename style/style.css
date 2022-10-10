@@ -173,6 +173,10 @@ aside {
         display: inline-block;
         color: #fff;
         padding-right: 20px;
+    } 
+
+    main {
+        grid-column: span 12;
     }
 
 }
