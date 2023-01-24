@@ -23,44 +23,68 @@ body {
 /* Mobile navigation styling */
 .mobile-nav {
   overflow: hidden;
-  background-color: grey;
+  background-color: black;
   position: relative;
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.collapsed {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.collapsed a {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#mobile-logo-link {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+}
+
+#mobile-logo {
+    width: 75px;
+    height: 80px;
+    padding: 0px;
+    padding-right: 10px;
+    float: right;
+}
+
+#hamburgerIcon {
+    fill: yellow;
+    position: absolute;
+    top: 15px;
+    left: 15px;   
+    display: inline-block; 
+    grid-column: span 2;
 }
 
 #mobile-nav-items {
-    background-color: grey;
     width: 100%;
     margin-left: 0;
     display: none;
     list-style-type: none;
     text-align: center;
+    grid-column: span 2;
 }
 
 #mobile-nav-items.active {
     display: block;
-    background-color: grey;
+    background-color: black;
 }
 
 #mobile-nav-items.active a {
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: white;
+    color: yellow;
     text-transform: uppercase;
-}
-
-#mobile-logo {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-}
-
-#hamburgerIcon {
-    fill: #fff;
-    position: absolute;
-    top: 10px;
-    right: 10px;    
+    font-size: 40px;
 }
 
 main {
@@ -70,7 +94,7 @@ main {
 /* Section titles styling */
 h2 {
     color: white;
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
 }
