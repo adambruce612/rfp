@@ -1,7 +1,7 @@
 const menuToggle = document.getElementById("hamburgerIcon");
 let mobileLinks = document.getElementById("mobile-nav-items");
+let tourLink = document.getElementById("tour")
 
-console.log(mobileLinks.classList);
 
 // menuToggle.addEventListener('click', () => {
 //    if (mobileLinks.classList = "active") {
@@ -15,3 +15,5 @@ menuToggle.addEventListener('click', () => {
    mobileLinks.classList.toggle('active');
    console.log(mobileLinks.classList);
 })
+
+

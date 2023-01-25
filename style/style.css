@@ -91,6 +91,12 @@ main {
     grid-column: span 2;
 }
 
+
+.contact p {
+    color: #fff;
+    text-align: center;
+}
+
 /* Section titles styling */
 h2 {
     color: white;
@@ -100,25 +106,54 @@ h2 {
 }
 
 /* Music section styling */
-
-#music img {
-    border: 2px solid white;
+.music-cards, .tour-cards {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 
-#bad-year {
-    display: block;
-    height: 150px;
-    width: auto;
+.music-card {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid yellow;
+    width: 75%;
+    height: 250px;
     margin: auto;
+    background-color: grey;
 }
 
-h3 {
+.music-card:nth-child(even) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.music-card img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+h4 {
     text-align: center;
     color: white;
-    margin-top: 10px;
-    width: 75%;
+    width: 50%;
     margin: auto;
+}
+
+.music-card-listen-button {
+    text-align: center;
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.music-card a {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .buttons {
