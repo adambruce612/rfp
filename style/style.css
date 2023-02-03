@@ -166,8 +166,31 @@ h4 {
 
 .tour-card {
     border: 2px solid white;
+    background-color: grey;
     color: #fff;
     overflow: hidden;
+    margin: 20px;
+   text-align: center;
+}
+
+.tour-card h3 {
+    padding: 5px; 
+}
+
+.tour-card p {
+    margin: 0;
+    padding: 0;
+}
+
+.tour-card .more-info {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.tour-card .more-info a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .buttons {
