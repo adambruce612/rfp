@@ -114,9 +114,7 @@ p {
 
 /* Music section styling */
 .music-cards, .tour-cards {
-    grid-column: span 2;
     display: flex;
-    flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
@@ -170,7 +168,7 @@ h4 {
     color: #fff;
     overflow: hidden;
     margin: 20px;
-   text-align: center;
+    text-align: center;
 }
 
 .tour-card h3 {
