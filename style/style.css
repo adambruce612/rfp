@@ -169,6 +169,7 @@ h4 {
     overflow: hidden;
     margin: 20px;
     text-align: center;
+    min-width: 200px;
 }
 
 .tour-card h3 {
@@ -249,28 +250,29 @@ aside {
         grid-column: span 12;
         width: 100%;
         background-color: grey;
+        display: flex;
     }
 
     #desktop-logo {
         width: 100px;
-        height: 100px;
-        display: inline;
-        
+        height: 75px;
     }
-
+/* 
     #main-nav-items {
-        display: inline;
-        text-align: center;
-    }
+    
+    } */
 
     #main-nav-items a {
         display: inline-block;
         color: #fff;
         padding-right: 20px;
+        padding-bottom: 0;
     } 
 
     main {
         grid-column: span 12;
     }
+
+    
 
 }
