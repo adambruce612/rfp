@@ -6,6 +6,7 @@ let mobileNavAbout = document.getElementById("mobile-nav-about");
 let mobileNavTour = document.getElementById("mobile-nav-tour");
 let mobileNavContact = document.getElementById("mobile-nav-contact");
 
+
 // menuToggle.addEventListener('click', () => {
 //    if (mobileLinks.classList = "active") {
 //    mobileLinks.classList.remove("active")
@@ -37,3 +38,4 @@ mobileNavTour.addEventListener('click', () => {
 mobileNavContact.addEventListener('click', () => {
    mobileLinks.classList.toggle('active');
 } )
+
