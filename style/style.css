@@ -104,13 +104,13 @@ h2 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 /*About Section*/
 p {
     color: #fff;
     padding: 20px;
-    text-transform: uppercase;
 }
 
 
@@ -160,7 +160,8 @@ h4 {
 
 .music-card a {
     padding: 5px;
-    background-color: #fff;
+    background-color: yellow;
+    color: black;
     border-radius: 10px;
 }
 
@@ -220,7 +221,6 @@ aside {
     overflow: hidden;
 }
 
-
 .icon {
     color: black;
     fill: white;
@@ -236,6 +236,10 @@ aside {
 
 .icon:hover {
     fill: yellow;
+}
+
+.about p {
+    padding: 20px;
 }
 
 @media (min-width: 720px) {
@@ -254,6 +258,7 @@ aside {
         height: 75px;
         background-color: black;
         display: flex;
+        margin: auto;
     }
 
     #desktop-logo {
@@ -261,13 +266,18 @@ aside {
         height: 75px;
     }
 
+    #main-nav-items {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+    }
 
     #main-nav-items a {
         display: inline-block;
         color: yellow;
         padding-right: 20px;
         padding-bottom: 10px;
-        vertical-align: baseline;
         text-decoration: none;
         font-size: 20px;
         text-transform: uppercase;
@@ -275,6 +285,8 @@ aside {
 
     main {
         grid-column: span 12;
+        max-width: 1000px;
+        margin: auto;
     }
 
     .music-cards, .tour-cards {
@@ -284,6 +296,16 @@ aside {
     .tour-card, .music-card {
         max-width: 250px;
         justify-content: space-between;
+    }
+
+    .about {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .social-media {
+        margin: auto;
+        grid-column: span 12;
     }
 
 }
