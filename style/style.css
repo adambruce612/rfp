@@ -10,6 +10,12 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+
+#listen-badyear img {
+    height: 300px;
+    width: 300px;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
