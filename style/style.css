@@ -16,6 +16,11 @@ body {
     width: 300px;
 }
 
+.listen-links {
+    display: block;
+    margin: auto;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
