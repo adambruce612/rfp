@@ -109,9 +109,17 @@ main {
     width: 100%;
 }
 
-.contact p {
+.contact p  {
     color: #fff;
     text-align: center;
+}
+
+.contact a {
+    color: #fff;
+}
+
+.contact a:hover {
+    color: yellow;
 }
 
 /* Section titles styling */
@@ -175,6 +183,14 @@ h4 {
     text-transform: uppercase;
 }
 
+.listenBtn:hover {
+    border: 2px solid black;
+}
+
+.listenBtn:active {
+    border-radius: 0;
+}
+
 .music-card a {
     padding: 5px;
     background-color: yellow;
@@ -210,6 +226,14 @@ h4 {
 .tour-card .more-info a {
     text-decoration: none;
     color: #fff;
+}
+
+.more-info a:hover {
+    color: yellow;
+}
+
+.more-info a:active {
+    text-decoration: underline;
 }
 
 .buttons {
@@ -300,6 +324,10 @@ aside {
         font-size: 20px;
         text-transform: uppercase;
     } 
+
+    #main-nav-items a:hover {
+        text-decoration: underline;
+    }
 
     main {
         grid-column: span 12;
